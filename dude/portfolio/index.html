@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lensa Yadesa - Software Engineer Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="star-layer"></div>
+
+    <header>
+      <div class="navigation-box">
+        <div class="logo">
+          <a href="#home-section"><p>Lensa Yadesa</p></a>
+        </div>
+        <div class="hire me button desktop-only">
+          <button
+            class="get in touch"
+            onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})"
+          >
+            Connect with me
+            <div class="arrow-container">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M137 133a4 4 0 0 1-4 4H67c-.263 0-.525-.027-.783-.079-.117-.023-.225-.067-.339-.1-.137-.04-.275-.072-.408-.127-.133-.055-.253-.131-.379-.199-.103-.057-.211-.102-.309-.168a4.023 4.023 0 0 1-1.109-1.109c-.065-.097-.109-.203-.165-.304-.07-.127-.146-.25-.202-.384-.055-.132-.086-.271-.126-.407-.033-.113-.077-.222-.101-.339A4.056 4.056 0 0 1 63 133V67a4 4 0 0 1 8 0v56.344l59.172-59.172a4 4 0 1 1 5.656 5.656L76.656 129H133a4 4 0 0 1 4 4z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="#home-section">Home<span></span></a>
+        <a href="#about-section">About Me<span></span></a>
+        <a href="#skills-tools-section">Skills<span></span></a>
+        <a href="#projects-section">Portfolio<span></span></a>
+      </nav>
+    </header>
+
+    <div class="scroll-container">
+      <div class="home-section page" id="home-section">
+        <div class="home-text">
+          <p class="greeting">
+            Hi, I'm <span class="name-highlight">Lensa Yadesa</span>
+          </p>
+          <p class="role">SOFTWARE ENGINEER</p>
+          <div class="btns-section">
+            <div class="button-group">
+              <div class="hire me button">
+                <button
+                  class="get in touch"
+                  onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})"
+                >
+                  Connect with me
+                  <div class="arrow-container">
+                    <svg
+                      viewBox="0 0 200 200"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M137 133a4 4 0 0 1-4 4H67c-.263 0-.525-.027-.783-.079-.117-.023-.225-.067-.339-.1-.137-.04-.275-.072-.408-.127-.133-.055-.253-.131-.379-.199-.103-.057-.211-.102-.309-.168a4.023 4.023 0 0 1-1.109-1.109c-.065-.097-.109-.203-.165-.304-.07-.127-.146-.25-.202-.384-.055-.132-.086-.271-.126-.407-.033-.113-.077-.222-.101-.339A4.056 4.056 0 0 1 63 133V67a4 4 0 0 1 8 0v56.344l59.172-59.172a4 4 0 1 1 5.656 5.656L76.656 129H133a4 4 0 0 1 4 4z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <div class="cv-button">
+                <button>
+                  Download Resume
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon-tabler icons-tabler-outline icon-tabler-download"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                    <path d="M7 11l5 5l5 -5" />
+                    <path d="M12 4l0 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="person">
+          <img src="./assets/image.png" alt="Lensa Yadesa profile image" />
+        </div>
+      </div>
+
+      <div class="About-me-section page" id="about-section">
+        <section class="about-me">
+          <h2>About Me</h2>
+          <div class="about-content">
+            <p class="about-intro">
+              I’m <span class="name-highlight1">Lensa Yadesa</span>, a Software
+              Engineering student at Addis Ababa University who transforms ideas
+              into meaningful digital experiences. I specialize in building web
+              applications that are both technically sound and visually
+              compelling.
+            </p>
+            <p class="about-detail">
+              From crafting smooth, intuitive interfaces to refining interactive
+              features, I approach every project with creativity, precision, and
+              a relentless drive for excellence.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="page" id="skills-tools-section">
+        <section class="skills-tools-section">
+          <h2>Skills & Tools</h2>
+          <div class="toggle-buttons skills-active">
+            <button id="skillsBtn" class="active">Skills</button>
+            <button id="toolsBtn">Tools</button>
+          </div>
+          <div id="skills" class="grid active">
+            <div class="icon"><img src="./assets/html.png" alt="HTML" /></div>
+            <div class="icon"><img src="./assets/css.png" alt="CSS" /></div>
+            <div class="icon">
+              <img src="./assets/javascript.png" alt="JavaScript" />
+            </div>
+            <div class="icon">
+              <img src="./assets/typescript.png" alt="TypeScript" />
+            </div>
+            <div class="icon">
+              <img src="./assets/python.png" alt="Python" />
+            </div>
+            <div class="icon"><img src="./assets/java.png" alt="Java" /></div>
+            <div class="icon">
+              <img src="./assets/kotlin.png" alt="Kotlin" />
+            </div>
+            <div class="icon">
+              <img src="./assets/flutter.png" alt="Flutter" />
+            </div>
+            <div class="icon">
+              <img src="./assets/nestjs.png" alt="NestJS" />
+            </div>
+          </div>
+          <div id="tools" class="grid">
+            <div class="icon"><img src="./assets/npm.png" alt="npm" /></div>
+            <div class="icon"><img src="./assets/git.png" alt="Git" /></div>
+            <div class="icon">
+              <img src="./assets/vscode.png" alt="VS Code" />
+            </div>
+            <div class="icon">
+              <img src="./assets/androidstudio.webp" alt="Android Studio" />
+            </div>
+            <div class="icon">
+              <img src="./assets/figma.png" alt="Figma" />
+            </div>
+            <div class="icon">
+              <img src="./assets/postman.png" alt="Postman" />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="page" id="projects-section">
+        <section id="projects" class="projects-section">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-container">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="./assets/enredada.png" alt="Eneredada project" />
+                <div class="project-overlay">
+                  <h3>Eneredada</h3>
+                  <p>
+                    Eneredada is a volunteer event platform I helped create to
+                    simplify organizing, managing, and participating in
+                    community events.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-thumb">
+                <img
+                  src="./assets/junior_joyride.png"
+                  alt="Junior Joyride project"
+                />
+                <div class="project-overlay">
+                  <h3>Junior Joyride</h3>
+                  <p>
+                    Interactive learning app for kids combining games and
+                    storytelling.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="./assets/echoframe.png" alt="EchoFrame project" />
+                <div class="project-overlay">
+                  <h3>EchoFrame</h3>
+                  <p>
+                    EchoFrame is a learning app I started to help students
+                    manage notes, take quizzes, and improve memory.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="page contact-page" id="contact-section">
+        <section class="contact-section">
+          <h2 class="contact-heading">Connect With Me</h2>
+          <p class="contact-subtitle">
+            I'm always open to
+            <span class="highlight-connect">collaborate</span> or reach out
+            below
+          </p>
+          <div class="social-links-container">
+            <a
+              href="https://github.com/liaayuin"
+              target="_blank"
+              class="social-icon-circle"
+              aria-label="GitHub"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/lensa-yadesa-0178a3372/"
+              target="_blank"
+              class="social-icon-circle"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a
+              href="https://t.me/liaayuin"
+              target="_blank"
+              class="social-icon-circle"
+              aria-label="Telegram"
+              title="Telegram"
+            >
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+
+            <a
+              href="https://leetcode.com/u/LIAMY/"
+              target="_blank"
+              class="social-icon-circle"
+              aria-label="LeetCode"
+              title="LeetCode"
+            >
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </section>
+        <footer>
+          <p>&copy; 2025 Lensa Yadesa. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+        const navLinks = document.querySelectorAll(".nav-menu a");
+
+        const closeMenu = () => {
+          navMenu.classList.remove("open");
+          menuToggle.classList.remove("open");
+        };
+
+        menuToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("open");
+          menuToggle.classList.toggle("open");
+        });
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", closeMenu);
+        });
+
+        const aboutSection = document.querySelector(".about-me");
+        const aboutObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              entry.target.classList.toggle("visible", entry.isIntersecting);
+            });
+          },
+          { threshold: 0.3 }
+        );
+        aboutObserver.observe(aboutSection);
+
+        const cards = document.querySelectorAll(".project-card");
+        const projectObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (
+                entry.isIntersecting &&
+                !entry.target.classList.contains("animate-in")
+              ) {
+                entry.target.classList.add("animate-in");
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        cards.forEach((card) => projectObserver.observe(card));
+
+        const skillsBtn = document.getElementById("skillsBtn");
+        const toolsBtn = document.getElementById("toolsBtn");
+        const skillsGrid = document.getElementById("skills");
+        const toolsGrid = document.getElementById("tools");
+        const toggleContainer = document.querySelector(".toggle-buttons");
+
+        const toggleSections = (showSkills) => {
+          skillsBtn.classList.toggle("active", showSkills);
+          toolsBtn.classList.toggle("active", !showSkills);
+          skillsGrid.classList.toggle("active", showSkills);
+          toolsGrid.classList.toggle("active", !showSkills);
+          toggleContainer.classList.toggle("skills-active", showSkills);
+          toggleContainer.classList.toggle("tools-active", !showSkills);
+        };
+
+        skillsBtn.addEventListener("click", () => toggleSections(true));
+        toolsBtn.addEventListener("click", () => toggleSections(false));
+
+        toggleSections(true);
+
+        document.querySelectorAll("nav a").forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+      });
+
+      const numStars = 200;
+      const starLayer = document.querySelector(".star-layer");
+      for (let i = 0; i < numStars; i++) {
+        const star = document.createElement("div");
+        star.className = "star";
+        star.style.top = `${Math.random() * 100}vh`;
+        star.style.left = `${Math.random() * 100}vw`;
+        star.style.animationDelay = `${Math.random() * 2}s`;
+        const moveX = (Math.random() - 0.5) * 20;
+        const moveY = (Math.random() - 0.5) * 20;
+        star.style.setProperty("--moveX", `${moveX}px`);
+        star.style.setProperty("--moveY", `${moveY}px`);
+        starLayer.appendChild(star);
+      }
+    </script>
+  </body>
+</html>
